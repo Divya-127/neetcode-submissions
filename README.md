@@ -1,72 +1,103 @@
-# NeetCode Solutions — @Divya-127
+# NeetCode 150 — Java Solutions
 
-> Synced automatically from [NeetCode.io](https://neetcode.io) · Repository: `neetcode-submissions`
+My solutions to the [NeetCode 150](https://neetcode.io/practice), written in Java and synced from [NeetCode.io](https://neetcode.io).
 
----
+**33 problems solved** · 7 Easy · 21 Medium · 5 Hard
 
-## What is this?
+Most solutions open with a short comment block: the concept, the key insight, the pattern, the complexity and a mental model, so each file works as a revision note.
 
-[NeetCode.io](https://neetcode.io) is a coding interview preparation platform featuring curated problems, video solutions, and an in-browser code editor. This repository is automatically populated with your accepted (or all) solutions using the **GitHub Sync** feature.
+## Progress
 
----
+| Topic | Solved | Of |
+|---|---|---|
+| [Arrays & Hashing](#arrays--hashing) | 9 | 9 |
+| [Two Pointers](#two-pointers) | 5 | 5 |
+| [Sliding Window](#sliding-window) | 6 | 6 |
+| [Stack](#stack) | 6 | 6 |
+| [Binary Search](#binary-search) | 7 | 7 |
 
-## How GitHub Sync works
+All five topics above are complete. Linked List, Trees, Backtracking (including Generate Parentheses) and the rest are still to come.
 
-1. **Connect your GitHub account** on [neetcode.io/profile/github](https://neetcode.io/profile/github).
-2. **Auto-commit** — every time you submit a solution on NeetCode, it is pushed here automatically (configurable by status).
-3. **Bulk Sync** — push all your past solutions at once from the GitHub settings page.
-4. **Manual sync** — from the submission history panel on any problem page, sync or remove individual submissions.
+## Solutions
 
----
+Complexity is for the latest submission. `n` is the input size unless noted.
+
+### Arrays & Hashing
+
+| # | Problem | Difficulty | Pattern | Time | Space |
+|---|---|---|---|---|---|
+| 1 | [Contains Duplicate](Data%20Structures%20%26%20Algorithms/duplicate-integer/submission-1.java) | Easy | HashSet | O(n) | O(n) |
+| 2 | [Valid Anagram](Data%20Structures%20%26%20Algorithms/is-anagram/submission-1.java) | Easy | Frequency maps | O(n) | O(n) |
+| 3 | [Two Sum](Data%20Structures%20%26%20Algorithms/two-integer-sum/submission-2.java) | Easy | HashMap complement lookup | O(n) | O(n) |
+| 4 | [Group Anagrams](Data%20Structures%20%26%20Algorithms/anagram-groups/submission-3.java) | Medium | Frequency signature as key | O(m·n) | O(m·n) |
+| 5 | [Top K Frequent Elements](Data%20Structures%20%26%20Algorithms/top-k-elements-in-list/submission-3.java) | Medium | Bucket sort by frequency | O(n) | O(n) |
+| 6 | [Encode and Decode Strings](Data%20Structures%20%26%20Algorithms/string-encode-and-decode/submission-1.java) | Medium | Length-prefix encoding | O(n) | O(n) |
+| 7 | [Product of Array Except Self](Data%20Structures%20%26%20Algorithms/products-of-array-discluding-self/submission-3.java) | Medium | Prefix + suffix products | O(n) | O(n) |
+| 8 | [Valid Sudoku](Data%20Structures%20%26%20Algorithms/valid-sudoku/submission-1.java) | Medium | HashSet per row / column / box | O(1) | O(1) |
+| 9 | [Longest Consecutive Sequence](Data%20Structures%20%26%20Algorithms/longest-consecutive-sequence/submission-2.java) | Medium | HashSet + sequence starts | O(n)* | O(n) |
+
+### Two Pointers
+
+| # | Problem | Difficulty | Pattern | Time | Space |
+|---|---|---|---|---|---|
+| 1 | [Valid Palindrome](Data%20Structures%20%26%20Algorithms/is-palindrome/submission-6.java) | Easy | Two pointers + filtering | O(n) | O(1) |
+| 2 | [Two Sum II](Data%20Structures%20%26%20Algorithms/two-integer-sum-ii/submission-1.java) | Medium | Two pointers on sorted input | O(n) | O(1) |
+| 3 | [3Sum](Data%20Structures%20%26%20Algorithms/three-integer-sum/submission-3.java) | Medium | Sort + two pointers | O(n²) | O(1) |
+| 4 | [Container With Most Water](Data%20Structures%20%26%20Algorithms/max-water-container/submission-1.java) | Medium | Two pointers, move shorter side | O(n) | O(1) |
+| 5 | [Trapping Rain Water](Data%20Structures%20%26%20Algorithms/trapping-rain-water/submission-1.java) | Hard | Prefix / suffix max | O(n) | O(n) |
+
+### Sliding Window
+
+| # | Problem | Difficulty | Pattern | Time | Space |
+|---|---|---|---|---|---|
+| 1 | [Best Time to Buy and Sell Stock](Data%20Structures%20%26%20Algorithms/buy-and-sell-crypto/submission-4.java) | Easy | Running minimum | O(n) | O(1) |
+| 2 | [Longest Substring Without Repeating Characters](Data%20Structures%20%26%20Algorithms/longest-substring-without-duplicates/submission-1.java) | Medium | Window + HashSet | O(n) | O(n) |
+| 3 | [Longest Repeating Character Replacement](Data%20Structures%20%26%20Algorithms/longest-repeating-substring-with-replacement/submission-1.java) | Medium | Window + max frequency | O(n) | O(1) |
+| 4 | [Permutation in String](Data%20Structures%20%26%20Algorithms/permutation-string/submission-1.java) | Medium | Fixed window + frequency match | O(n·m) | O(1) |
+| 5 | [Minimum Window Substring](Data%20Structures%20%26%20Algorithms/minimum-window-with-characters/submission-3.java) | Hard | Expand / shrink window | O(n) | O(1) |
+| 6 | [Sliding Window Maximum](Data%20Structures%20%26%20Algorithms/sliding-window-maximum/submission-2.java) | Hard | Monotonic deque | O(n) | O(k) |
+
+### Stack
+
+| # | Problem | Difficulty | Pattern | Time | Space |
+|---|---|---|---|---|---|
+| 1 | [Valid Parentheses](Data%20Structures%20%26%20Algorithms/validate-parentheses/submission-1.java) | Easy | Stack matching | O(n) | O(n) |
+| 2 | [Min Stack](Data%20Structures%20%26%20Algorithms/minimum-stack/submission-0.java) | Medium | Auxiliary min stack | O(1) / op | O(n) |
+| 3 | [Evaluate Reverse Polish Notation](Data%20Structures%20%26%20Algorithms/evaluate-reverse-polish-notation/submission-1.java) | Medium | Operand stack | O(n) | O(n) |
+| 4 | [Daily Temperatures](Data%20Structures%20%26%20Algorithms/daily-temperatures/submission-1.java) | Medium | Monotonic decreasing stack | O(n) | O(n) |
+| 5 | [Car Fleet](Data%20Structures%20%26%20Algorithms/car-fleet/submission-1.java) | Medium | Sort + monotonic stack | O(n log n) | O(n) |
+| 6 | [Largest Rectangle in Histogram](Data%20Structures%20%26%20Algorithms/largest-rectangle-in-histogram/submission-1.java) | Hard | Monotonic increasing stack | O(n) | O(n) |
+
+### Binary Search
+
+| # | Problem | Difficulty | Pattern | Time | Space |
+|---|---|---|---|---|---|
+| 1 | [Binary Search](Data%20Structures%20%26%20Algorithms/binary-search/submission-0.java) | Easy | Classic binary search | O(log n) | O(1) |
+| 2 | [Search a 2D Matrix](Data%20Structures%20%26%20Algorithms/search-2d-matrix/submission-8.java) | Medium | Staircase search | O(m + n) | O(1) |
+| 3 | [Koko Eating Bananas](Data%20Structures%20%26%20Algorithms/eating-bananas/submission-1.java) | Medium | Binary search on answer | O(n log max) | O(1) |
+| 4 | [Find Minimum in Rotated Sorted Array](Data%20Structures%20%26%20Algorithms/find-minimum-in-rotated-sorted-array/submission-1.java) | Medium | Compare mid with end | O(log n) | O(1) |
+| 5 | [Search in Rotated Sorted Array](Data%20Structures%20%26%20Algorithms/find-target-in-rotated-sorted-array/submission-5.java) | Medium | Identify the sorted half | O(log n) | O(1) |
+| 6 | [Time Based Key-Value Store](Data%20Structures%20%26%20Algorithms/time-based-key-value-store/submission-5.java) | Medium | HashMap + TreeMap floorEntry | O(log n) / get | O(n) |
+| 7 | [Median of Two Sorted Arrays](Data%20Structures%20%26%20Algorithms/median-of-two-sorted-arrays/submission-1.java) | Hard | Binary search on partition | O(log min(m,n)) | O(1) |
+
+\* Worst case is O(n²) if the input contains many duplicates of a sequence start. Iterating over the set instead of the array fixes this; it is on the revisit list below.
+
+## To revisit
+
+- **Search a 2D Matrix**: redo as a single binary search over the flattened matrix for O(log(m·n)).
+- **Permutation in String**: replace the per-window frequency rebuild with a sliding window and match counter for O(n).
+- **Top K Frequent Elements**: tighten the loop exit so ties at the k boundary cannot overflow the result array.
+- **Longest Consecutive Sequence**: iterate over the set to remove the duplicate-input worst case.
+- **Koko Eating Bananas**: accumulate hours in a `long` to avoid overflow on large piles.
+- **Product of Array Except Self / Trapping Rain Water**: reduce to O(1) extra space.
 
 ## Repository structure
 
-Solutions are organized by topic folder, then problem ID. Each submission is stored as a separate file:
-
 ```
-<topic-folder>/
+Data Structures & Algorithms/
   <problem-id>/
-    submission-0.<ext>   ← first submission
-    submission-1.<ext>   ← second submission
-    ...
+    submission-0.java
+    submission-1.java   # later attempts; the highest number is the latest
 ```
 
-**Example:**
-```
-Data Structures & Algorithms/two-integer-sum/submission-0.py
-Data Structures & Algorithms/binary-search/submission-0.ts
-Python For Beginners/python-hello-world/submission-0.py
-```
-
----
-
-## Supported languages
-
-| Language | Extension |
-|---|---|
-| Python | `.py` |
-| JavaScript | `.js` |
-| TypeScript | `.ts` |
-| Java | `.java` |
-| C++ | `.cpp` |
-| C# | `.cs` |
-| Go | `.go` |
-| Rust | `.rs` |
-| Kotlin | `.kt` |
-| Swift | `.swift` |
-| SQL | `.sql` |
-
----
-
-## Settings
-
-Manage your sync preferences at [neetcode.io/profile/github](https://neetcode.io/profile/github):
-
-- **Auto-commit toggle** — enable or disable automatic commits on submission
-- **Status filter** — sync all submissions or accepted only
-- **Rename repository** — rename this repo or start fresh with a new one
-- **Bulk Sync** — push all past solutions at once (rate-limited)
-
----
-
-*Generated by [NeetCode GitHub Integration](https://neetcode.io)*
+Solutions sync here automatically through NeetCode's GitHub integration.
