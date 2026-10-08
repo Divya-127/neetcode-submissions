@@ -2,7 +2,7 @@
 
 My solutions to the [NeetCode 150](https://neetcode.io/practice), written in Java and synced from [NeetCode.io](https://neetcode.io).
 
-**33 problems solved** · 7 Easy · 21 Medium · 5 Hard
+**39 problems solved** · 13 Easy · 21 Medium · 5 Hard
 
 Most solutions open with a short comment block: the concept, the key insight, the pattern, the complexity and a mental model, so each file works as a revision note.
 
@@ -15,12 +15,13 @@ Most solutions open with a short comment block: the concept, the key insight, th
 | [Sliding Window](#sliding-window) | 6 | 6 |
 | [Stack](#stack) | 6 | 6 |
 | [Binary Search](#binary-search) | 7 | 7 |
+| [Trees](#trees) | 6 | 15 |
 
-All five topics above are complete. Linked List, Trees, Backtracking (including Generate Parentheses) and the rest are still to come.
+Arrays & Hashing, Two Pointers, Sliding Window, Stack and Binary Search are complete, and Trees is in progress. Linked List, Backtracking (including Generate Parentheses) and the rest are still to come.
 
 ## Solutions
 
-Complexity is for the latest submission. `n` is the input size unless noted.
+Complexity is for the latest submission. `n` is the input size unless noted; `h` is tree height.
 
 ### Arrays & Hashing
 
@@ -80,6 +81,17 @@ Complexity is for the latest submission. `n` is the input size unless noted.
 | 6 | [Time Based Key-Value Store](Data%20Structures%20%26%20Algorithms/time-based-key-value-store/submission-5.java) | Medium | HashMap + TreeMap floorEntry | O(log n) / get | O(n) |
 | 7 | [Median of Two Sorted Arrays](Data%20Structures%20%26%20Algorithms/median-of-two-sorted-arrays/submission-1.java) | Hard | Binary search on partition | O(log min(m,n)) | O(1) |
 
+### Trees
+
+| # | Problem | Difficulty | Pattern | Time | Space |
+|---|---|---|---|---|---|
+| 1 | [Invert Binary Tree](Data%20Structures%20%26%20Algorithms/invert-a-binary-tree/submission-1.java) | Easy | Recursive DFS, swap children | O(n) | O(h) |
+| 2 | [Maximum Depth of Binary Tree](Data%20Structures%20%26%20Algorithms/depth-of-binary-tree/submission-1.java) | Easy | Recursive DFS | O(n) | O(h) |
+| 3 | [Diameter of Binary Tree](Data%20Structures%20%26%20Algorithms/binary-tree-diameter/submission-1.java) | Easy | DFS returning height, track best path | O(n) | O(h) |
+| 4 | [Balanced Binary Tree](Data%20Structures%20%26%20Algorithms/balanced-binary-tree/submission-4.java) | Easy | DFS height with early-exit sentinel | O(n) | O(h) |
+| 5 | [Same Tree](Data%20Structures%20%26%20Algorithms/same-binary-tree/submission-1.java) | Easy | Recursive structural comparison | O(n) | O(h) |
+| 6 | [Subtree of Another Tree](Data%20Structures%20%26%20Algorithms/subtree-of-a-binary-tree/submission-2.java) | Easy | DFS search + Same Tree check | O(n·m) | O(h) |
+
 \* Worst case is O(n²) if the input contains many duplicates of a sequence start. Iterating over the set instead of the array fixes this; it is on the revisit list below.
 
 ## To revisit
@@ -90,6 +102,7 @@ Complexity is for the latest submission. `n` is the input size unless noted.
 - **Longest Consecutive Sequence**: iterate over the set to remove the duplicate-input worst case.
 - **Koko Eating Bananas**: accumulate hours in a `long` to avoid overflow on large piles.
 - **Product of Array Except Self / Trapping Rain Water**: reduce to O(1) extra space.
+- **Subtree of Another Tree**: O(n·m) is fine for the constraints; serializing both trees or hashing subtrees gets it to O(n + m).
 
 ## Repository structure
 
