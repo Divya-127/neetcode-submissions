@@ -19,6 +19,29 @@ Most solutions open with a short comment block: the concept, the key insight, th
 
 Arrays & Hashing, Two Pointers, Sliding Window, Stack and Binary Search are complete, and Trees is in progress. Linked List, Backtracking (including Generate Parentheses) and the rest are still to come.
 
+## Pattern index
+
+Revise by pattern instead of by problem number. A problem can appear under more than one pattern.
+
+| Pattern | Problems |
+|---|---|
+| Hash map / set lookup | [Contains Duplicate](Data%20Structures%20%26%20Algorithms/duplicate-integer/submission-1.java) · [Two Sum](Data%20Structures%20%26%20Algorithms/two-integer-sum/submission-2.java) · [Valid Sudoku](Data%20Structures%20%26%20Algorithms/valid-sudoku/submission-1.java) · [Longest Consecutive Sequence](Data%20Structures%20%26%20Algorithms/longest-consecutive-sequence/submission-2.java) |
+| Frequency counting / bucketing | [Valid Anagram](Data%20Structures%20%26%20Algorithms/is-anagram/submission-1.java) · [Group Anagrams](Data%20Structures%20%26%20Algorithms/anagram-groups/submission-3.java) · [Top K Frequent Elements](Data%20Structures%20%26%20Algorithms/top-k-elements-in-list/submission-3.java) |
+| Prefix / suffix | [Product of Array Except Self](Data%20Structures%20%26%20Algorithms/products-of-array-discluding-self/submission-3.java) · [Trapping Rain Water](Data%20Structures%20%26%20Algorithms/trapping-rain-water/submission-1.java) |
+| Two pointers | [Valid Palindrome](Data%20Structures%20%26%20Algorithms/is-palindrome/submission-6.java) · [Two Sum II](Data%20Structures%20%26%20Algorithms/two-integer-sum-ii/submission-1.java) · [3Sum](Data%20Structures%20%26%20Algorithms/three-integer-sum/submission-3.java) · [Container With Most Water](Data%20Structures%20%26%20Algorithms/max-water-container/submission-1.java) · [Trapping Rain Water](Data%20Structures%20%26%20Algorithms/trapping-rain-water/submission-1.java) |
+| Sliding window | [Best Time to Buy and Sell Stock](Data%20Structures%20%26%20Algorithms/buy-and-sell-crypto/submission-4.java) · [Longest Substring Without Repeating Characters](Data%20Structures%20%26%20Algorithms/longest-substring-without-duplicates/submission-1.java) · [Longest Repeating Character Replacement](Data%20Structures%20%26%20Algorithms/longest-repeating-substring-with-replacement/submission-1.java) · [Permutation in String](Data%20Structures%20%26%20Algorithms/permutation-string/submission-1.java) · [Minimum Window Substring](Data%20Structures%20%26%20Algorithms/minimum-window-with-characters/submission-3.java) · [Sliding Window Maximum](Data%20Structures%20%26%20Algorithms/sliding-window-maximum/submission-2.java) |
+| Monotonic stack / deque | [Daily Temperatures](Data%20Structures%20%26%20Algorithms/daily-temperatures/submission-1.java) · [Car Fleet](Data%20Structures%20%26%20Algorithms/car-fleet/submission-1.java) · [Largest Rectangle in Histogram](Data%20Structures%20%26%20Algorithms/largest-rectangle-in-histogram/submission-1.java) · [Sliding Window Maximum](Data%20Structures%20%26%20Algorithms/sliding-window-maximum/submission-2.java) |
+| Stack for matching / evaluation | [Valid Parentheses](Data%20Structures%20%26%20Algorithms/validate-parentheses/submission-1.java) · [Min Stack](Data%20Structures%20%26%20Algorithms/minimum-stack/submission-0.java) · [Evaluate Reverse Polish Notation](Data%20Structures%20%26%20Algorithms/evaluate-reverse-polish-notation/submission-1.java) |
+| Binary search on an index | [Binary Search](Data%20Structures%20%26%20Algorithms/binary-search/submission-0.java) · [Search a 2D Matrix](Data%20Structures%20%26%20Algorithms/search-2d-matrix/submission-8.java) · [Find Minimum in Rotated Sorted Array](Data%20Structures%20%26%20Algorithms/find-minimum-in-rotated-sorted-array/submission-1.java) · [Search in Rotated Sorted Array](Data%20Structures%20%26%20Algorithms/find-target-in-rotated-sorted-array/submission-5.java) |
+| Binary search on the answer or a partition | [Koko Eating Bananas](Data%20Structures%20%26%20Algorithms/eating-bananas/submission-1.java) · [Median of Two Sorted Arrays](Data%20Structures%20%26%20Algorithms/median-of-two-sorted-arrays/submission-1.java) |
+| Binary search inside a data structure | [Time Based Key-Value Store](Data%20Structures%20%26%20Algorithms/time-based-key-value-store/submission-5.java) |
+| Tree DFS: return information up (post-order) | [Maximum Depth of Binary Tree](Data%20Structures%20%26%20Algorithms/depth-of-binary-tree/submission-1.java) · [Diameter of Binary Tree](Data%20Structures%20%26%20Algorithms/binary-tree-diameter/submission-1.java) · [Balanced Binary Tree](Data%20Structures%20%26%20Algorithms/balanced-binary-tree/submission-4.java) |
+| Tree DFS: carry state down (pre-order) | [Count Good Nodes in Binary Tree](Data%20Structures%20%26%20Algorithms/count-good-nodes-in-binary-tree/submission-1.java) · [Binary Tree Right Side View](Data%20Structures%20%26%20Algorithms/binary-tree-right-side-view/submission-3.java) |
+| Two-tree recursion | [Same Tree](Data%20Structures%20%26%20Algorithms/same-binary-tree/submission-1.java) · [Subtree of Another Tree](Data%20Structures%20%26%20Algorithms/subtree-of-a-binary-tree/submission-2.java) |
+| BST property | [Lowest Common Ancestor of a BST](Data%20Structures%20%26%20Algorithms/lowest-common-ancestor-in-binary-search-tree/submission-1.java) |
+| Tree BFS (queue, level by level) | [Binary Tree Level Order Traversal](Data%20Structures%20%26%20Algorithms/level-order-traversal-of-binary-tree/submission-1.java) |
+| Recursive restructuring | [Invert Binary Tree](Data%20Structures%20%26%20Algorithms/invert-a-binary-tree/submission-1.java) |
+
 ## Solutions
 
 Complexity is for the latest submission. `n` is the input size unless noted; `h` is tree height.
