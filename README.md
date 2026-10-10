@@ -2,7 +2,7 @@
 
 My solutions to the [NeetCode 150](https://neetcode.io/practice), written in Java and synced from [NeetCode.io](https://neetcode.io).
 
-**39 problems solved** · 13 Easy · 21 Medium · 5 Hard
+**43 problems solved** · 13 Easy · 25 Medium · 5 Hard
 
 Most solutions open with a short comment block: the concept, the key insight, the pattern, the complexity and a mental model, so each file works as a revision note.
 
@@ -15,7 +15,7 @@ Most solutions open with a short comment block: the concept, the key insight, th
 | [Sliding Window](#sliding-window) | 6 | 6 |
 | [Stack](#stack) | 6 | 6 |
 | [Binary Search](#binary-search) | 7 | 7 |
-| [Trees](#trees) | 6 | 15 |
+| [Trees](#trees) | 10 | 15 |
 
 Arrays & Hashing, Two Pointers, Sliding Window, Stack and Binary Search are complete, and Trees is in progress. Linked List, Backtracking (including Generate Parentheses) and the rest are still to come.
 
@@ -91,6 +91,10 @@ Complexity is for the latest submission. `n` is the input size unless noted; `h`
 | 4 | [Balanced Binary Tree](Data%20Structures%20%26%20Algorithms/balanced-binary-tree/submission-4.java) | Easy | DFS height with early-exit sentinel | O(n) | O(h) |
 | 5 | [Same Tree](Data%20Structures%20%26%20Algorithms/same-binary-tree/submission-1.java) | Easy | Recursive structural comparison | O(n) | O(h) |
 | 6 | [Subtree of Another Tree](Data%20Structures%20%26%20Algorithms/subtree-of-a-binary-tree/submission-2.java) | Easy | DFS search + Same Tree check | O(n·m) | O(h) |
+| 7 | [Lowest Common Ancestor of a BST](Data%20Structures%20%26%20Algorithms/lowest-common-ancestor-in-binary-search-tree/submission-1.java) | Medium | BST ordering, walk down | O(h) | O(h) |
+| 8 | [Binary Tree Level Order Traversal](Data%20Structures%20%26%20Algorithms/level-order-traversal-of-binary-tree/submission-1.java) | Medium | BFS with queue | O(n) | O(n) |
+| 9 | [Binary Tree Right Side View](Data%20Structures%20%26%20Algorithms/binary-tree-right-side-view/submission-3.java) | Medium | DFS, right child first, track depth | O(n) | O(h) |
+| 10 | [Count Good Nodes in Binary Tree](Data%20Structures%20%26%20Algorithms/count-good-nodes-in-binary-tree/submission-1.java) | Medium | DFS carrying max so far | O(n) | O(h) |
 
 \* Worst case is O(n²) if the input contains many duplicates of a sequence start. Iterating over the set instead of the array fixes this; it is on the revisit list below.
 
@@ -102,6 +106,7 @@ Complexity is for the latest submission. `n` is the input size unless noted; `h`
 - **Longest Consecutive Sequence**: iterate over the set to remove the duplicate-input worst case.
 - **Koko Eating Bananas**: accumulate hours in a `long` to avoid overflow on large piles.
 - **Product of Array Except Self / Trapping Rain Water**: reduce to O(1) extra space.
+- **Lowest Common Ancestor of a BST**: an iterative loop gets the space down from O(h) to O(1).
 - **Subtree of Another Tree**: O(n·m) is fine for the constraints; serializing both trees or hashing subtrees gets it to O(n + m).
 
 ## Repository structure
